@@ -22,8 +22,9 @@ npm install
 cd ../server
 npm install
 
-Skip these process i alreaddy include all node_module packages. 
-4) Set up your MongoDB database:
+**Skip these process i alreaddy include all node_module packages.**
+ 
+ ## Set up your MongoDB database:
 Make sure MongoDB is running on your local machine or provide the connection URI if it's hosted remotely.
 Update the connection string in index.js if necessary.
 and replace localhost with  ur localhost ip for ex 127.0.0.1:27017
@@ -37,23 +38,15 @@ mongoose.connect("mongodb://127.0.0.1:27017/school");
 connect the server 
 
 2) Start the backend server:
-3) 
 **Navigate to the backend directory**
-
 cd server
-
 **Start the server**
-
 npm start
 
-4) Start the frontend development server:
-5) 
+3) Start the frontend development server:
 **Navigate to the frontend directory**
-
 cd client
-
 **Start the development server**
-
 npm run dev
 
 Open your web browser and visit (http://localhost:5173/) to view the application.
@@ -67,8 +60,5 @@ The backend API endpoints are accessible at http://localhost:3001.
 facing challenges with implementing token-based authentication using JSON Web Tokens (JWTs), particularly with refreshing access tokens using refresh tokens. Let's address the issues :
 
 **Login Endpoint with hashing**:  login endpoint (/login) seems to be handling user authentication correctly by generating both access and refresh tokens upon successful login.
-
-**Refresh Token Functionality**:  implemented a renewToken function to handle token renewal using refresh tokens. However, it seems there 
-might be some issues with how it's functioning, particularly with the logic for checking and verifying refresh tokens.
-
+**Refresh Token Functionality**:  implemented a renewToken function to handle token renewal using refresh tokens. However, it seems there might be some issues with how it's functioning, particularly with the logic for checking and verifying refresh tokens.
 **Access Token Verification Middleware**: You've created a middleware function verifyUser to verify access tokens. This middleware should check the validity of the access token included in the request and proceed with the request if it's valid.
