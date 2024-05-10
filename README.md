@@ -37,15 +37,23 @@ mongoose.connect("mongodb://127.0.0.1:27017/school");
 connect the server 
 
 2) Start the backend server:
+3) 
 **Navigate to the backend directory**
+
 cd server
+
 **Start the server**
+
 npm start
 
-3) Start the frontend development server:
+4) Start the frontend development server:
+5) 
 **Navigate to the frontend directory**
+
 cd client
+
 **Start the development server**
+
 npm run dev
 
 Open your web browser and visit (http://localhost:5173/) to view the application.
